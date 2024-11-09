@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../tailwind.css">
+</head>
+
+<body>
+    <div class="header_container bg-header-bg-color">
+        <div class="container header w-[1024px] mx-auto py-5 px-10 sm:flex hidden justify-between items-center">
+            <a href="../../index.html">
+                <img src="../../assets/svg/goose.svg" class="logo md:w-[150px] w-[100px]">
+            </a>
+            <div class="pages flex gap-2 md:gap-9 sm:gap-[20px]">
+                <a href="catalog.html"
+                    class="page-link transition-all hover:text-[#FF9900] text-[10px] md:text-[15px]">Каталог</a>
+                <a href="./dostavka.html"
+                    class="page-link transition-all hover:text-[#FF9900] text-[10px] md:text-[15px]">Доставка</a>
+                <a href="#" class="page-link transition-all hover:text-[#FF9900] text-[10px] md:text-[15px]">Условия</a>
+                <a href="./contact.html"
+                    class="page-link transition-all hover:text-[#FF9900] text-[10px] md:text-[15px]">Контакты</a>
+            </div>
+            <div class="number font-semibold cursor-pointer">
+                <div class="flex gap-2 lg:text-[15px] text-[12px]">+375 736 463 64 72 <span class="lg:flex hidden">+375
+                        736 463 64 72</span>
+                </div>
+                <p class="text-end font-normal text-[12px] click-text">Заказать звонок</p>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto sm:my-10 my-5">
+        <div class="section px-4 flex items-center justify-center md:gap-8 gap-4">
+            <div class="menu sm:flex hidden">
+                <img src="../../assets/svg/burger.svg" class=" max-w-[25px] cursor-pointer">
+            </div>
+            <div
+                class="outline-none sm:gap-0 gap-10 search rounded-3xl border-[#7d7d7d5b] border-[2px] flex items-center">
+                <div class="menu2 sm:hidden flex w-[25px] mx-4 my-2">
+                    <img src="../../assets/svg/burger.svg" class="cursor-pointer">
+                </div>
+                <div class="goose">
+                    <img src="../../assets/svg/goose.svg" class="sm:hidden flex">
+                </div>
+                <input type="text" placeholder="Что желаете найти?"
+                    class="outline-none focus:border-white focus:border-[1px] sm:flex hidden mx-3 rounded-3xl border-none md:w-[400px] w-[320px] md:h-[50px] h-[35px]">
+                <img src="../../assets/svg/search.svg" class="mx-3">
+            </div>
+            <p class="wrt lg:flex hidden cursor-pointer text-[#FF9900]">Вставить список покупок</p>
+            <div class="star sm:flex hidden">
+                <img src="../../assets/svg/star.svg" class="max-w-[25px] cursor-pointer">
+            </div>
+            <div class="add sm:flex hidden">
+                <a href="korzina.html">
+                    <img src="../../assets/svg/add_cart.svg" class="max-w-[25px] cursor-pointer">
+                </a>
+            </div>
+            <div class="user sm:flex hidden">
+                <a href="public/pages/personal_acc.html">
+                    <img src="../../assets/svg/user.svg" class="max-w-[25px] cursor-pointer">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col max-w-[400px] container mx-auto">
+        <h2 class="text-center text-[25px] mb-5 font-bold">Личный кабинет</h2>
+        <form class="flex flex-col gap-3">
+            <input class="outline-none border-[1px] rounded-3xl px-4 py-2 border-[#2f2f2f42]" type="number"
+                placeholder="Телефон" required>
+            <input class="outline-none border-[1px] rounded-3xl px-4 py-2 border-[#2f2f2f42]" type="email"
+                placeholder="Email" required>
+            <input class="outline-none border-[1px] rounded-3xl px-4 py-2 border-[#2f2f2f42]" type="password"
+                placeholder="Пароль" required>
+            <input class="outline-none border-[1px] rounded-3xl px-4 py-2 border-[#2f2f2f42]" type="password"
+                placeholder="Повторите пароль" required>
+            <button type="submit"
+                class="flex justify-center text-white py-2 rounded-3xl bg-button-color">Сохранить</button>
+        </form>
+        <p class="text-[14px] my-4 font-medium text-[#5a5a5a]">Выход</p>
+        <p class="text-center text-[14px] mb-5 font-bold">Мы в социальных сетях!</p>
+        <div class="icons flex flex-wrap justify-between">
+            <a href="#" class="icon">
+                <img src="../../assets/svg/w.svg" class="max-w-[60px]">
+            </a>
+            <a href="#" class="icon">
+                <img src="../../assets/svg/facenook.svg" class="max-w-[60px]">
+            </a>
+            <a href="#" class="icon">
+                <img src="../../assets/svg/g+.svg" class="max-w-[100px]">
+            </a>
+        </div>
+    </div>
+
+    <!-- java script -->
+
+    <div
+        class="manu_container transition-all flex flex-col gap-4 fixed left-[-600px] z-[50] top-0 bg-white-color h-full px-16 py-5">
+        <a href="../../index.html">
+            <img src="../../assets/svg/logo.svg" class="cursor-pointer">
+        </a>
+        <div class="close absolute cursor-pointer right-5 top-8">
+            <img src="../../assets/svg/close.svg" class="max-w-[230px]">
+        </div>
+        <a href="public/pages/catalog.html" class="text-[20px] font-bold">Каталог</a>
+        <a href="#" class="text-[20px] font-bold">Товары в наличии</a>
+        <a href="#" class="text-[20px] font-bold">Скидки</a>
+        <a href="#" class="text-[20px] font-bold">Популярное</a>
+        <a href="#" class="text-[20px] font-bold">Вдохновение</a>
+        <p>Доставка</p>
+        <p>Услуги</p>
+        <p>Услуги</p>
+        <a href="contact.html">
+            <p>Контакты</p>
+        </a>
+    </div>
+    <div
+        class="users_number transition-all flex flex-col gap-4 fixed right-[-600px] z-[50] top-0 bg-white-color h-full px-10 py-5">
+        <div class="close_btn absolute cursor-pointer right-5 top-8">
+            <img src="../../assets/svg/close.svg" class="max-w-[230px]">
+        </div>
+        <h2 class="mt-[100px] text-[20px] font-bold">Заказать звонок</h2>
+        <p class="text-[10px] font-semibold text-gray-700">На какой номер вам перезвонить?</p>
+        <form class="flex flex-col items-start gap-2">
+            <input type="number" placeholder="+375 ___ ___ __ __"
+                class="w-[300px] h-[35px] rounded-2xl px-2 border-[2px] border-gray-100" required>
+            <button type="submit"
+                class="w-[300px] h-[35px] text-white font-bold text-[13px] bg-button-color rounded-2xl flex items-center justify-center">Отправить</button>
+        </form>
+    </div>
+    <div class="bottom_navigator flex sm:hidden fixed z-50 bottom-0 w-full">
+        <div
+            class="w-full h-[60px] border-[1px] border-[#00000038] bg-white-color gap-8 flex justify-center items-center text-[12px] font-semibold">
+            <div class="user w-[25%] cursor-pointer flex flex-col items-center gap-1">
+                <img src="../../assets/svg/user.svg" class="w-[23px] h-[23px]">
+                Вход
+            </div>
+            <div class="phone w-[25%] cursor-pointer flex flex-col items-center gap-1">
+                <img src="../../assets/svg/phone.svg" class="w-[23px] h-[23px]">
+                Контакты
+            </div>
+            <div class="star w-[25%] cursor-pointer flex flex-col items-center gap-1">
+                <img src="../../assets/svg/star.svg" class="w-[23px] h-[23px]">
+                Избранное
+            </div>
+            <div class="cart w-[25%] cursor-pointer flex flex-col items-center gap-1">
+                <img src="../../assets/svg/cart.svg" class="w-[23px] h-[23px]">
+                Корзина
+            </div>
+        </div>
+        <div class="two_navigator"></div>
+    </div>
+    <div class="blur_radius blur-sm w-full h-full z-[5] top-0 bg-gray-color hidden fixed"></div>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
